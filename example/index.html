@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { width: 1000px; height: 1000px; }
+.widget {
+    position: absolute;
+    background: #333;
+}
+
+#item1 { width: 200px; height: 200px; left: 100px; top: 50px; }
+#item2 { width: 100px; height: 200px; left: 400px; top: 150px;  }
+#item3 { width: 300px; height: 100px; left: 300px; top: 400px; }
+</style>
+<script src="../build/build.js"></script>
+<link rel="stylesheet" href="../build/build.css">
+</head>
+
+<body>
+	<div id="item1" class="widget"></div>
+	<div id="item2" class="widget"></div>
+	<div id="item3" class="widget"></div>
+</body>
+
+<script>
+var dims = require("bounding-dimensions");
+var bounding = dims(".widget");
+var d = document.createElement("div");
+document.body.appendChild(d);
+console.log(bounding);
+d.style.position = "absolute";
+d.style.width = bounding.width + "px";
+d.style.height = bounding.height + "px";
+d.style.left = bounding.left + "px";
+d.style.top = bounding.top + "px";
+d.style.border = "1px solid red";
+</script>
+</html>
