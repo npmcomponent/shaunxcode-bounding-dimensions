@@ -2,7 +2,7 @@
 (function() {
   var elementCollection;
 
-  elementCollection = require("element-collection");
+  elementCollection = require('timoxley-element-collection');
 
   module.exports = function(elements) {
     var x1, x2, y1, y2;

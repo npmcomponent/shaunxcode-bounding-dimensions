@@ -1,0 +1,14 @@
+{
+  "name": "shaunxcode-bounding-dimensions",
+  "description": "get bounding dimensions for a set of elements",
+  "version": "0.0.1",
+  "keywords": [
+    "utility",
+    "elements",
+    "bounding",
+    "dimensions"
+  ],
+  "dependencies": {
+    "timoxley-element-collection": "git://github.com/npmcomponent/timoxley-element-collection.git"
+  }
+}
